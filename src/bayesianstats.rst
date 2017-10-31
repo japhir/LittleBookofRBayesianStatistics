@@ -41,7 +41,7 @@ Specifying a Prior for a Proportion
 
 An appropriate prior to use for a proportion is a Beta prior.
 
-For example, if you want to estimate the proportion of people like chocolate, you
+For example, if you want to estimate the proportion of people who like chocolate, you
 might have a rough idea that the most likely value is around 0.85, but that the proportion
 is unlikely to be smaller than 0.60 or bigger than 0.95. 
 
@@ -137,7 +137,7 @@ We can plot the prior density by using the "curve" function:
 
 |image1|
 
-Note that in the command above we use the "dbeta()" function to specify that
+Note that in the command above we use the "dbeta()" function to specify
 the density of a Beta(52.22,9.52105105105105) distribution. 
 
 We can see from the picture of the density for a Beta(52.22,9.52105105105105) distribution
@@ -216,7 +216,7 @@ the proportion, taking the data into consideration. That is, you may wish to cal
 the conditional distribution of the proportion given the data and the prior. This is is called
 the posterior distribution for the proportion. 
 
-The posterior distribution ssummarises what is known about the proportion after the data
+The posterior distribution summarises what is known about the proportion after the data
 has been observed, and combines the information from the prior and the data.
 
 In our example of estimating the proportion of people who like chocolate, we have a Beta(52.22,9.52) prior
@@ -288,7 +288,7 @@ Since the prior and posterior are distributions, the area under their densities 
 The likelihood has been scaled so that the area underneath it is also 1, so that it is
 easy to compare the likelihood with the prior and posterior.
 
-Therefore, the prior and likelihood curves should look the same shape as those plotted
+Therefore, the prior and likelihood curves should have the same shape as those plotted
 before (see above), but the y-axis scale is different for the likelihood scale compared
 to the plot made using calcLikelihoodForProportion() above.
 
